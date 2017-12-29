@@ -10,11 +10,4 @@ You should NOT try to redefine any of the above variables.
 
 const newID = oldID + 1000000000;
 
-const ageIsValid = (currentAge) => {
-  if Number.isInteger(currentAge) {
-    return true;
-  }
-  else {
-    return false;
-  }
-}
+const ageIsValid = Number.isInteger(currentAge);
